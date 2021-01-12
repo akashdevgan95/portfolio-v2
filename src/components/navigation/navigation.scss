@@ -1,0 +1,81 @@
+.navbar{
+    a{
+        color:var(--grey-text-color);
+        font-weight: 300;
+        letter-spacing: 2px;
+        &:hover{
+            
+            color:var(--green-color);
+        }
+
+        svg{
+            width:40px;
+            height:40px;
+        }
+    }
+
+    div.hamburger-container{
+        position: relative;
+        div.hamburger-icon,
+        div.hamburger-icon::after,
+        div.hamburger-icon::before{
+            height: 2px;
+            width: 25px;
+            border-radius: 5px;
+            background-color: var(--green-color);
+            display: block;
+            position: absolute;
+            transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+            transition-duration: .22s;
+        }
+
+        div.hamburger-icon{
+            right:10px;
+            &::before,
+            &::after{
+                content:'';
+            }
+
+            &::before{
+                top:-7px;
+               
+            }
+
+            &::after{
+                top:7px;
+             
+            }
+        }
+
+        &.active{
+            div.hamburger-icon
+            {
+                top:0;
+                transform:rotate(40deg);
+                // transform: rotate(-90deg);
+            }
+
+            div.hamburger-icon::before{
+                top:0;
+                opacity: 0;
+            }
+
+            div.hamburger-icon::after{
+                transform: rotate(95deg);
+                top: 0;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+    .navbar{
+        a{
+            svg{
+                width:50px;
+                height:50px;
+            }
+        }
+    }
+}

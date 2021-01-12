@@ -1,0 +1,30 @@
+:root{
+    --grey-text-color:#C5C6C7;
+    --green-color:#66FCF1;
+    --page-bg:#1F2833;
+    --tile-bg:#303943;
+
+    --roboto-font:'Roboto', sans-serif;
+
+    --base-font-size:14px;
+}
+
+html{
+    background-color:var(--page-bg);
+    font-family: var(--roboto-font);
+    color:var(--grey-text-color);
+    font-size: var(--base-font-size);
+}
+
+body{
+    background-color:var(--page-bg);
+}
+
+// buttons
+.green-btn{
+    background-color: var(--green-color);
+    color: var(--page-bg) !important;
+    border-radius: 2px;
+    text-align:center;
+    max-width: 175px;
+}
