@@ -2,15 +2,12 @@ import React, { useState } from 'react';
 import {
   Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
   NavLink
 } from 'reactstrap';
 
-// css
-import './navigation.scss';
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +15,7 @@ const Navigation = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <Navbar expand='md' className='p-3 p-sm-5'>
+        <Navbar className={isOpen ? 'p-3 p-md-5 active w-100' : 'p-3 p-md-5 w-100'} expand='md'>
             <NavbarBrand href='/'>
                 <svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'>
                     <rect x='0.5' y='0.5' width='99' height='99' stroke='#66FCF1'/>
@@ -26,23 +23,23 @@ const Navigation = (props) => {
                 </svg>
             </NavbarBrand>
             <div className={isOpen ? 'hamburger-container active d-md-none' : 'hamburger-container d-md-none'} onClick={toggle}>
-                <div className='hamburger-icon'></div>
+                <div className='hamburger-icon' onClick={toggle}></div>
             </div>
             <Collapse isOpen={isOpen} navbar>
                 <Nav className='ml-auto' navbar>
-                    <NavItem className='mx-md-3'>
+                    <NavItem className='my-2 my-md-0 mx-md-3'>
                         <NavLink href='#about'>About</NavLink>
                     </NavItem>
-                    <NavItem className='mx-md-3'>
+                    <NavItem className='my-2 my-md-0 mx-md-3'>
                         <NavLink href='#experience'>Experience</NavLink>
                     </NavItem>
-                    <NavItem className='mx-md-3'>
+                    <NavItem className='my-2 my-md-0 mx-md-3'>
                         <NavLink href='#projects'>Projects</NavLink>
                     </NavItem>
-                    <NavItem className='mx-md-3'>
+                    <NavItem className='my-2 my-md-0 mx-md-3'>
                         <NavLink href='#blog'>Blog</NavLink>
                     </NavItem>
-                    <NavItem className='mx-md-3'>
+                    <NavItem className='my-2 my-md-0 mx-md-3'>
                         <NavLink href='#contact' className='green-btn px-sm-3'>Hire me</NavLink>
                     </NavItem>
                 </Nav>

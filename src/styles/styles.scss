@@ -1,1 +1,18 @@
-@import './global.scss';
+/* Tools
+=========================================*/
+@import 'mixins';
+
+
+/* Styles
+=========================================*/
+@import 'global';
+
+/* Component styles
+=============================*/
+@import '../components/navigation/navigation';
+@import '../components/social/social';
+
+
+/* Sections
+=============================*/
+@import '../sections/intro/intro';

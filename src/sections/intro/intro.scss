@@ -1,0 +1,26 @@
+.intro{
+    h1{
+        font-weight:700;
+        line-height: 1;
+    }
+    p{
+        line-height: 1.4;
+        @include media-breakpoint(md){
+            width:75%;
+        }
+        @include media-breakpoint(lg){
+            width:50%;
+        }
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        @include media-breakpoint(md){
+            flex-direction: row;
+            max-width: 300px;
+        }
+    }
+}
+

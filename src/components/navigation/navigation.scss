@@ -1,4 +1,14 @@
 .navbar{
+    background-color:var(--page-bg);
+    z-index: 1;
+    position: fixed;
+    &.active{
+        box-shadow: -1px 3px 23px -2px rgba(0,0,0,0.3);
+        @include media-breakpoint(md){
+            box-shadow:none;
+        }
+    }
+
     a{
         color:var(--grey-text-color);
         font-weight: 300;
@@ -11,6 +21,10 @@
         svg{
             width:40px;
             height:40px;
+            @include media-breakpoint(md){
+                width:50px;
+                height:50px;
+            }
         }
     }
 
@@ -65,17 +79,6 @@
                 top: 0;
             }
 
-        }
-    }
-}
-
-@media (min-width: 768px) { 
-    .navbar{
-        a{
-            svg{
-                width:50px;
-                height:50px;
-            }
         }
     }
 }

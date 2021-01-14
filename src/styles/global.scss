@@ -3,7 +3,7 @@
     --green-color:#66FCF1;
     --page-bg:#1F2833;
     --tile-bg:#303943;
-
+    --white-color:#fff;
     --roboto-font:'Roboto', sans-serif;
 
     --base-font-size:14px;
@@ -21,10 +21,69 @@ body{
 }
 
 // buttons
-.green-btn{
-    background-color: var(--green-color);
-    color: var(--page-bg) !important;
+
+.btn{
     border-radius: 2px;
     text-align:center;
-    max-width: 175px;
+    font-weight: 500 !important;
+    @include fontSize(14px);
+}
+
+.green-btn{
+    @extend .btn;
+    background-color: var(--green-color);
+    color: var(--page-bg) !important;  
+    border: none;
+}
+
+.green-border-btn{
+    @extend .btn;
+    background-color: transparent;
+    border:2px solid var(--green-color);
+    color: var(--green-color);
+}
+
+// Helpful classes
+.green-color-text{
+    color:var(--green-color);
+}
+
+.white-color-text{
+    color:var(--white-color);
+}
+
+.greay-color-text{
+    color:var(--grey-text-color);
+}
+
+//Section classes
+.full-vh-height{
+    height:100vh;
+}
+
+// Global element styles
+h1{
+    @include fontSize(28px);
+    letter-spacing: 4px;
+    @include media-breakpoint(md){
+        @include fontSize(56px);
+    }
+    @include media-breakpoint(lg){
+        @include fontSize(84px);
+    }
+}
+
+h3{
+    @include fontSize(28px);
+    letter-spacing: 3px;
+    
+}
+
+
+p{
+    @include fontSize(14px);
+    letter-spacing: 1px;
+    @include media-breakpoint(md){
+        @include fontSize(20px);
+    }
 }
