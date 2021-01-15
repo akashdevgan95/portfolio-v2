@@ -1,21 +1,36 @@
-import React, { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from 'reactstrap';
+import React, { useState, useEffect } from 'react';
+import {Collapse, Navbar, NavbarBrand, Nav, NavItem, NavLink} from 'reactstrap';
 
 
 const Navigation = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
 
-  const toggle = () => setIsOpen(!isOpen);
+    const [isNavVisible, setNavVisibility] = useState(true);
+    const [prevOffset, setPrevOffset] = useState(0);
 
+    const toggleScrollDirection = () => {
+        let scrollY = window.scrollY;
+
+        if(scrollY > prevOffset){
+            setNavVisibility(false);
+        }else if(scrollY < prevOffset){
+            setNavVisibility(true);
+        }
+
+        setPrevOffset(scrollY);
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", toggleScrollDirection);
+        return () => {
+            window.removeEventListener("scroll", toggleScrollDirection);
+        }
+    });
+
+    
     return (
-        <Navbar className={isOpen ? 'p-3 p-md-5 active w-100' : 'p-3 p-md-5 w-100'} expand='md'>
+        <Navbar className={isNavVisible ? 'p-3 px-md-5 active w-100' : 'p-3 px-md-5 w-100'} expand='md'>
             <NavbarBrand href='/'>
                 <svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'>
                     <rect x='0.5' y='0.5' width='99' height='99' stroke='#66FCF1'/>
