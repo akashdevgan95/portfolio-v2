@@ -6,16 +6,25 @@ const Navigation = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
 
-    const [isNavVisible, setNavVisibility] = useState(true);
+    const [scrollDirection, setScrollDirection] = useState('');
     const [prevOffset, setPrevOffset] = useState(0);
+    const [scrollToTop, setScrollToTop] = useState(true);
 
     const toggleScrollDirection = () => {
         let scrollY = window.scrollY;
 
+
+        if(scrollY == 0){
+            setScrollToTop(true);
+            return;
+        }else{
+            setScrollToTop(false);
+        }
+        
         if(scrollY > prevOffset){
-            setNavVisibility(false);
+            setScrollDirection('down');
         }else if(scrollY < prevOffset){
-            setNavVisibility(true);
+            setScrollDirection('up');
         }
 
         setPrevOffset(scrollY);
@@ -28,9 +37,19 @@ const Navigation = (props) => {
         }
     });
 
+    let navClasses = 'p-3 px-md-5 active w-100';
+
+    if(scrollToTop == true){
+        navClasses = navClasses + ' top'
+    }else if(scrollDirection == 'up'){
+        navClasses = navClasses + ' up'
+    }else if(scrollDirection == 'down'){
+        navClasses = navClasses + ' down'
+    }
+
     
     return (
-        <Navbar className={isNavVisible ? 'p-3 px-md-5 active w-100' : 'p-3 px-md-5 w-100'} expand='md'>
+        <Navbar className={navClasses} expand='md'>
             <NavbarBrand href='/'>
                 <svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'>
                     <rect x='0.5' y='0.5' width='99' height='99' stroke='#66FCF1'/>
