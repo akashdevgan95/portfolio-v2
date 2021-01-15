@@ -18,7 +18,7 @@ const About = () => {
                         </Col>
                     </Row>
                     <Row className='mt-5'>
-                        <Col xs={{ size: 10, offset: 1 }} sm={{ size: 6, offset: 0 }}>
+                        <Col xs={{ size: 10, offset: 1 }} md={{ size: 6, offset: 0 }}>
                            <img className='img-fluid' src={MyImage} /> 
                         </Col>
                         <Col xs={{ size: 10, offset: 1 }} sm={{ size: 6, offset: 0 }}>
