@@ -1,14 +1,15 @@
 import React from "react";
 
-//Index
+//components
+import Layout from '../components/layout/layout';
 import Intro from '../sections/intro/intro';
 
 
 const IndexPage = () => {
   return (
-    <React.Fragment>
+    <Layout>
       <Intro />
-    </React.Fragment>
+    </Layout>
   );
 }
 
