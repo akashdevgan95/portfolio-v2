@@ -27,17 +27,32 @@ div.about{
         }
         svg{
             position: absolute;
-            width: 120px;
+            width: 70px;
             transition: 0.3s ease-in-out;
+            @include media-breakpoint(md){
+                width: 120px;
+            }
         }
 
         svg.bottom-border{
-            right: -20px;
-            bottom: -20px;
+            right: -15px;
+            bottom: -15px;
+            @include media-breakpoint(md){
+                right: -20px;
+                bottom: -20px;
+            }
         }
         svg.top-border{
-            left: -20px;
-            top: -20px;
+            left: -15px;
+            top: -15px;
+            @include media-breakpoint(md){
+                left: -20px;
+                top: -20px;
+            }
         }
+    }
+
+    div.technologies{
+        display: flex;
     }
 }

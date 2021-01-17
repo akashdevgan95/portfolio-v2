@@ -1,5 +1,9 @@
 h2.sectionHeading{
     color:var(--white-color);
-    @include fontSize(56px);
+    @include fontSize(42px);
+    @include media-breakpoint(md){
+        @include fontSize(56px);
+    }
+    
     letter-spacing: 2px;
 }
