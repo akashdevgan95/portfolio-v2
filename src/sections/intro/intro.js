@@ -8,7 +8,7 @@ const Intro = () => {
                 <Col xs={{ size: 10, offset: 1 }}  className='offset-md-2 offset-lg-1'>
                     <h3 className='green-color-text m-0'>Hi, I am</h3>
                     <h1 className='white-color-text mt-2 mb-4'>Akash Devgan</h1>
-                    <p className='gray-color-text w-md-50 mb-4'>I am a Web Developer based in Toronto, Canada.My expertise is in building web applications, landing  pages and anything in between.
+                    <p className='gray-color-text w-md-50 mb-4'>I am a Web Developer based in Toronto, Canada. My expertise is in building web applications, landing  pages and anything in between.
                     </p>
                     <section className='header-cta'>
                         <button className='green-btn p-2 px-4'>Download CV</button>
