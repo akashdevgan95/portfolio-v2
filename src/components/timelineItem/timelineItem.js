@@ -1,6 +1,9 @@
 import React from 'react';
 
-const timelineItem = (props) => {
+import chevron from '../../images/chevron.svg';
+
+const timelineItem = ({title,time,responsibilities}) => {
+    
     return (
         <div class="timeline-item">
 				<div class="timeline-icon">
@@ -8,12 +11,10 @@ const timelineItem = (props) => {
 
 				</div>
 				<div class="timeline-content">
-					<h2>LOREM IPSUM DOLOR</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
-					</p>
-					<a href="#" class="btn">button</a>
+                    <p className='gray-color-text mb-2'>{time}</p>
+					<h6 className='green-color-text mb-4'>{title}</h6>
+					
+					<div>{responsibilities.map(resposibility => <span className='gray-color-text mb-1'><img src={chevron} className='mr-2' />{resposibility}</span>)}</div>
 				</div>
 			</div>
     )

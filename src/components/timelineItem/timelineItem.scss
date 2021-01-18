@@ -1,0 +1,23 @@
+div.timeline-item{
+    margin-top:40px;
+    &:first-child{
+        margin-top:0;
+    }
+    div.timeline-content{
+        h6{
+            @include fontSize(14px);
+            letter-spacing: 1px;
+            @include media-breakpoint(md){
+                @include fontSize(20px);
+            }
+        }
+        span{
+            display: flex;
+            align-items: center;
+            img{
+                width: 7px;
+                height: 7px;
+            }
+        }
+    }
+}

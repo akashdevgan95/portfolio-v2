@@ -12,9 +12,11 @@
 @import '../components/navigation/navigation';
 @import '../components/social/social';
 @import '../components/sectionHeading/sectionHeading';
+@import '../components/timelineItem/timelineItem';
 
 
 /* Sections
 =============================*/
 @import '../sections/intro/intro';
-@import '../sections/about/about.scss';
+@import '../sections/about/about';
+@import '../sections/experience/experience';

@@ -18,7 +18,7 @@ const About = () => {
                             <SectionHeading title='About me'/>
                         </Col>
                     </Row>
-                    <Row className='mt-md-5'>
+                    <Row>
                         <Col className='mt-4 mt-md-0' xs={{ size: 12 }} md={{ size: 7 }} lg={{ size: 7 }}>
                             <p className='gray-color-text'>Hello! my name is Akash Devgan. I’m a web developer based in Toronto, Canada. </p>
                             <p className='gray-color-text'>I’m super passiante about build things for the web. My goal is always to build applications that not only load fast but also deliver great user experience.</p>
