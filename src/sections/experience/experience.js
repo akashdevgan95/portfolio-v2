@@ -7,13 +7,15 @@ import data from '../../data/experience.json';
 //components
 import SectionHeading from '../../components/sectionHeading/sectionHeading';
 import TimelineItem from '../../components/timelineItem/timelineItem';
+import MiniNav from '../../components/miniNav/miniNav';
 
 const Experience = () => {
- 
 
+    console.log(data);
+ 
     const positions = data.companies.map(company => {
         const jobPosition = data[company].map(position => <TimelineItem {...position} />);
-        return jobPosition;
+        return <div className={company}>{jobPosition}</div>;
     });
 
     return (
@@ -27,10 +29,14 @@ const Experience = () => {
                     </Row>
                     <Row>
                         <Col>
+                            <MiniNav navItems={data.companies}/>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
                             {positions}
                         </Col>
                     </Row>
-                    <Row></Row>
                 </Col>
             </Row>
         </Container>
