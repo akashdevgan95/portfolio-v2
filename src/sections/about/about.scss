@@ -53,6 +53,19 @@ div.about{
     }
 
     div.technologies{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, 140px));
+        padding: 0px;
+        margin: 20px 0px 0px;
+        overflow: hidden;
+        list-style: none;
+        span{
+            display: flex;
+            align-items: center;
+            img{
+                width: 7px;
+                height: 7px;
+            }
+        }
     }
 }

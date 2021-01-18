@@ -1,6 +1,9 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 
+//arrow down
+import arrowDown from '../../images/arrow.svg';
+
 const Intro = () => {
     return (
         <Container className='intro'>
@@ -15,8 +18,8 @@ const Intro = () => {
                         <a href='#contact' className='green-border-btn mt-4 mt-md-0 ml-md-4 p-2 px-4'>Contact Me</a>
                     </section>
                 </Col>
-                
             </Row>
+            <img src={arrowDown} />
         </Container>
     );
 }

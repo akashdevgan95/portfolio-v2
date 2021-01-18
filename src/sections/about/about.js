@@ -6,6 +6,7 @@ import SectionHeading from '../../components/sectionHeading/sectionHeading';
 
 //Image
 import MyImage from '../../images/my-image.jpg';
+import chevron from '../../images/chevron.svg';
 
 const About = () => {
     return (
@@ -17,18 +18,30 @@ const About = () => {
                             <SectionHeading title='About me'/>
                         </Col>
                     </Row>
-                    <Row className='mt-md-4'>
+                    <Row className='mt-md-5'>
                         <Col className='mt-4 mt-md-0' xs={{ size: 12 }} md={{ size: 7 }} lg={{ size: 7 }}>
                             <p className='gray-color-text'>Hello! my name is Akash Devgan. I’m a web developer based in Toronto, Canada. </p>
                             <p className='gray-color-text'>I’m super passiante about build things for the web. My goal is always to build applications that not only load fast but also deliver great user experience.</p>
                             <p className='gray-color-text'>Some of my favorite techologies to work with are :</p>
                             <div className='technologies'>
-                                <span className='gray-color-text'>Nodejs</span>
-                                <span className='gray-color-text'>React</span>
-                                <span className='gray-color-text'>Express</span>
-                                <span className='gray-color-text'>Shopify</span>
-                                <span className='gray-color-text'>JavaScript</span>
-                                <span className='gray-color-text'>Sass</span>
+                                <span className='gray-color-text'>
+                                    <img src={chevron} className='mr-2' />Nodejs
+                                </span>
+                                <span className='gray-color-text'>
+                                    <img src={chevron} className='mr-2' />React
+                                </span>
+                                <span className='gray-color-text'>
+                                    <img src={chevron} className='mr-2' />Express
+                                </span>
+                                <span className='gray-color-text'>
+                                    <img src={chevron} className='mr-2' />Shopify
+                                </span>
+                                <span className='gray-color-text'>
+                                    <img src={chevron} className='mr-2' />JavaScript
+                                </span>
+                                <span className='gray-color-text'>
+                                    <img src={chevron} className='mr-2' />Sass
+                                </span>
                             </div>
                         </Col>
                         <Col className='mt-5 ml-lg-4' xs={{ size: 12 }} md={{ size: 4, offset:1 }} lg={{ size: 4, offset:0 }}>

@@ -1,0 +1,45 @@
+{
+    "Saranghae":[
+        {
+            "time":"2020 (March) - Present",
+            "title":"Full Stack Developer",
+            "responsibilities":[
+                "Designing and developing Restful APIs",
+                "Develop functional databases, applications, and servers to support websites on the back end",
+                "Integrating our front-end UI with the constructed API"
+            ]
+        },
+        {
+            "time":"2019 - 2020 (March)",
+            "title":"Frontend Web Developer",
+            "responsibilities":[
+                "Developing features to enhance the user experience",
+                "Optimizing web pages for maximum speed and scalability",
+                "Write reusable code and libraries",
+                "Ensuring cross-platform optimization for mobile phones"
+            ]
+        }
+    ],
+    "Idea Rebel":[
+        {
+            "time":"2020 (March) - Present",
+            "title":"Full Stack Developer",
+            "responsibilities":[
+                "Designing and developing Restful APIs",
+                "Develop functional databases, applications, and servers to support websites on the back end",
+                "Integrating our front-end UI with the constructed API"
+            ]
+        },
+        {
+            "time":"2019 - 2020 (March)",
+            "title":"Frontend Web Developer",
+            "responsibilities":[
+                "Developing features to enhance the user experience",
+                "Optimizing web pages for maximum speed and scalability",
+                "Write reusable code and libraries",
+                "Ensuring cross-platform optimization for mobile phones"
+            ]
+        }
+    ]
+
+}
