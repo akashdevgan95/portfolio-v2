@@ -13,13 +13,13 @@ const Experience = () => {
 
     console.log(data);
  
-    const positions = data.companies.map(company => {
+    const positions = data.companies.map((company,i) => {
         const jobPosition = data[company].map(position => <TimelineItem {...position} />);
-        return <div className={company}>{jobPosition}</div>;
+        return <div className={i == 0 ? `${company} active` : `${company} d-none`}>{jobPosition}</div>;
     });
 
     return (
-        <Container className='experience'>
+        <Container className='experience mt-5 pt-5 mt-md-0 pt-md-0'>
             <Row className='full-vh-height align-items-center'>
                 <Col xs={{ size: 10, offset: 1 }}  className='offset-md-2 offset-lg-1'>
                     <Row>
@@ -33,7 +33,7 @@ const Experience = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
+                        <Col className='job-positions'>
                             {positions}
                         </Col>
                     </Row>

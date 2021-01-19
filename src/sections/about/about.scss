@@ -29,26 +29,15 @@ div.about{
             position: absolute;
             width: 70px;
             transition: 0.3s ease-in-out;
-            @include media-breakpoint(md){
-                width: 120px;
-            }
         }
 
         svg.bottom-border{
             right: -15px;
             bottom: -15px;
-            @include media-breakpoint(md){
-                right: -20px;
-                bottom: -20px;
-            }
         }
         svg.top-border{
             left: -15px;
             top: -15px;
-            @include media-breakpoint(md){
-                left: -20px;
-                top: -20px;
-            }
         }
     }
 

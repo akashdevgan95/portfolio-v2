@@ -1,7 +1,19 @@
 div.timeline-item{
     margin-top:40px;
+    position: relative;
     &:first-child{
         margin-top:0;
+    }
+    div.timeline-icon{
+        width: 25px;
+        height: 25px;
+        border: 2px solid var(--green-color);
+        border-radius: 50%;
+        background-color: var(--tile-bg);
+        position: absolute;
+        left: -3rem;
+        transform: translateX(-45%);
+        top: -1px;
     }
     div.timeline-content{
         h6{
@@ -13,10 +25,11 @@ div.timeline-item{
         }
         span{
             display: flex;
-            align-items: center;
+            align-items: baseline;
             img{
                 width: 7px;
                 height: 7px;
+                transform: translateY(-2px);
             }
         }
     }

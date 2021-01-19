@@ -1,0 +1,15 @@
+div.experience{
+    div.job-positions{
+        > div{
+            position: relative;
+            &::before{
+                content: "";
+                width: 3px;
+                background-color: var(--green-color);
+                height: 105%;
+                display: block;
+                position: absolute;
+            }
+        }
+    }
+}

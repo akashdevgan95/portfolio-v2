@@ -5,7 +5,7 @@ import chevron from '../../images/chevron.svg';
 const timelineItem = ({title,time,responsibilities}) => {
     
     return (
-        <div class="timeline-item">
+        <div class="timeline-item ml-5">
 				<div class="timeline-icon">
 					
 
