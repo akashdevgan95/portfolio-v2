@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
+import { v4 as uuidv4 } from 'uuid';
 
 // data
 import data from '../../data/experience.json';
@@ -11,11 +12,10 @@ import MiniNav from '../../components/miniNav/miniNav';
 
 const Experience = () => {
 
-    console.log(data);
  
     const positions = data.companies.map((company,i) => {
-        const jobPosition = data[company].map(position => <TimelineItem {...position} />);
-        return <div className={i == 0 ? `${company} active` : `${company} d-none`}>{jobPosition}</div>;
+        const jobPosition = data[company].map(position => <TimelineItem key={uuidv4()} {...position} />);
+        return <div key={uuidv4()} className={i === 0 ? `${company} active` : `${company} d-none`}>{jobPosition}</div>;
     });
 
     return (

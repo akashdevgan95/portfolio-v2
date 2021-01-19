@@ -14,7 +14,7 @@ const Navigation = (props) => {
         let scrollY = window.scrollY;
 
 
-        if(scrollY == 0){
+        if(scrollY === 0){
             setScrollToTop(true);
             return;
         }else{
@@ -39,11 +39,11 @@ const Navigation = (props) => {
 
     let navClasses = 'p-3 px-md-5 active w-100';
 
-    if(scrollToTop == true){
+    if(scrollToTop === true){
         navClasses = navClasses + ' top'
-    }else if(scrollDirection == 'up'){
+    }else if(scrollDirection === 'up'){
         navClasses = navClasses + ' up'
-    }else if(scrollDirection == 'down'){
+    }else if(scrollDirection === 'down'){
         navClasses = navClasses + ' down'
     }
 

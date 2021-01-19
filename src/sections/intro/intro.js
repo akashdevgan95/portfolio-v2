@@ -19,7 +19,7 @@ const Intro = () => {
                     </section>
                 </Col>
             </Row>
-            <img src={arrowDown} />
+            <img alt='Arrow Down Icon' src={arrowDown} />
         </Container>
     );
 }
