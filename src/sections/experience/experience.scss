@@ -1,6 +1,5 @@
 div.experience{
     div.job-positions{
-        > div{
             position: relative;
             &::before{
                 content: "";
@@ -10,6 +9,6 @@ div.experience{
                 display: block;
                 position: absolute;
             }
-        }
+        
     }
 }

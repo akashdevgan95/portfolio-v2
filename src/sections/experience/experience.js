@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -12,11 +12,13 @@ import MiniNav from '../../components/miniNav/miniNav';
 
 const Experience = () => {
 
- 
-    const positions = data.companies.map((company,i) => {
-        const jobPosition = data[company].map(position => <TimelineItem key={uuidv4()} {...position} />);
-        return <div key={uuidv4()} className={i === 0 ? `${company} active` : `${company} d-none`}>{jobPosition}</div>;
-    });
+    const [activeTab, setActiveTab] = useState(data.companies[0]);
+
+    const positions = data[activeTab] || [];
+
+    const handleMiniNavButtonClick = (e) => {
+       setActiveTab(e.target.innerText)
+    }
 
     return (
         <Container className='experience mt-5 pt-5 mt-md-0 pt-md-0'>
@@ -29,12 +31,13 @@ const Experience = () => {
                     </Row>
                     <Row>
                         <Col>
-                            <MiniNav navItems={data.companies}/>
-                        </Col>
+                    
+                            <MiniNav activeTab={activeTab} onClick={handleMiniNavButtonClick} navItems={data.companies} />
+                            </Col>
                     </Row>
-                    <Row>
+                    <Row className='pl-3'>
                         <Col className='job-positions'>
-                            {positions}
+                            {positions.map(position => <TimelineItem {...position} />)}
                         </Col>
                     </Row>
                 </Col>

@@ -1,5 +1,5 @@
 {
-    "companies":["Saranghae","Idea Rebel"],
+    "companies":["Saranghae","Idea Rebel","test1","test2"],
     "Saranghae":[
         {
             "time":"2020 (March) - Present",
@@ -23,6 +23,27 @@
     ],
     "Idea Rebel":[
         {
+            "time":"2018",
+            "title":"Full Stack Developer",
+            "responsibilities":[
+                "idea rebel Designing and developing Restful APIs",
+                "Develop functional databases, applications, and servers to support websites on the back end",
+                "Integrating our front-end UI with the constructed API"
+            ]
+        },
+        {
+            "time":"2019 - 2020 idea rebel (March)",
+            "title":"Frontend Web Developer",
+            "responsibilities":[
+                "idea rebelDeveloping features to enhance the user experience",
+                "Optimizing web pages for maximum speed and scalability",
+                "Write reusable code and libraries",
+                "Ensuring cross-platform optimization for mobile phones"
+            ]
+        }
+    ],
+    "test1":[
+        {
             "time":"2020 (March) - Present",
             "title":"Full Stack Developer",
             "responsibilities":[
@@ -36,6 +57,27 @@
             "title":"Frontend Web Developer",
             "responsibilities":[
                 "Developing features to enhance the user experience",
+                "Optimizing web pages for maximum speed and scalability",
+                "Write reusable code and libraries",
+                "Ensuring cross-platform optimization for mobile phones"
+            ]
+        }
+    ],
+    "test2s":[
+        {
+            "time":"2018",
+            "title":"Full Stack Developer",
+            "responsibilities":[
+                "idea rebel Designing and developing Restful APIs",
+                "Develop functional databases, applications, and servers to support websites on the back end",
+                "Integrating our front-end UI with the constructed API"
+            ]
+        },
+        {
+            "time":"2019 - 2020 idea rebel (March)",
+            "title":"Frontend Web Developer",
+            "responsibilities":[
+                "idea rebelDeveloping features to enhance the user experience",
                 "Optimizing web pages for maximum speed and scalability",
                 "Write reusable code and libraries",
                 "Ensuring cross-platform optimization for mobile phones"

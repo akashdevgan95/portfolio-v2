@@ -1,5 +1,11 @@
 div.miniNav{
     border-bottom: 3px solid var(--grey-text-color);
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    @include media-breakpoint(md){
+        overflow: auto
+    }
     button{
         background: none;
         border:none;
