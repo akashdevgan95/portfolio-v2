@@ -3,7 +3,7 @@ div.social-icons{
     top: 50%;
     left: 1rem;
     transform: translate(25%,-50%);
-    @include media-breakpoint(md){
+    @include media-breakpoint(md, min){
         left:3rem;
     }
     > a{

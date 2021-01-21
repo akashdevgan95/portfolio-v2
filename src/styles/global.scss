@@ -65,10 +65,10 @@ body{
 h1{
     @include fontSize(28px);
     letter-spacing: 4px;
-    @include media-breakpoint(md){
+    @include media-breakpoint(md, min){
         @include fontSize(56px);
     }
-    @include media-breakpoint(lg){
+    @include media-breakpoint(lg, min){
         @include fontSize(84px);
     }
 }
@@ -83,7 +83,7 @@ h3{
 p{
     @include fontSize(14px);
     letter-spacing: 1px;
-    @include media-breakpoint(md){
+    @include media-breakpoint(md, min){
         @include fontSize(20px);
     }
 }

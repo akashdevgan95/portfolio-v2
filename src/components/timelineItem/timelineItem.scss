@@ -19,7 +19,7 @@ div.timeline-item{
         h6{
             @include fontSize(14px);
             letter-spacing: 1px;
-            @include media-breakpoint(md){
+            @include media-breakpoint(md, min){
                 @include fontSize(20px);
             }
         }

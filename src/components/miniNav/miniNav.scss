@@ -1,16 +1,17 @@
 div.miniNav{
     border-bottom: 3px solid var(--grey-text-color);
     white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    @include media-breakpoint(md){
-        overflow: auto
+    
+    @include media-breakpoint(md, max){
+        overflow-x: scroll;
+        overflow-y: hidden;
     }
     button{
         background: none;
         border:none;
         color:var(--grey-text-color);
         outline: none;
+        min-width: 120px;
         &.active{
             color:var(--green-color);
             position: relative;

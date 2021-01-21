@@ -1,7 +1,7 @@
 h2.sectionHeading{
     color:var(--white-color);
     @include fontSize(42px);
-    @include media-breakpoint(md){
+    @include media-breakpoint(md, min){
         @include fontSize(56px);
     }
     
