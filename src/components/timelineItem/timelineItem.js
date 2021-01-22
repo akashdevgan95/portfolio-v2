@@ -15,7 +15,7 @@ const timelineItem = ({title,time,responsibilities}) => {
                     <p className='gray-color-text mb-2'>{time}</p>
 					<h6 className='green-color-text mb-4'>{title}</h6>
 					
-					<div>{responsibilities.map(resposibility => <span key={uuidv4()} className='gray-color-text mb-1'><img alt='chevron' src={chevron} className='mr-2' />{resposibility}</span>)}</div>
+					<div>{responsibilities ? responsibilities.map(resposibility => <span key={uuidv4()} className='gray-color-text mb-1'><img alt='chevron' src={chevron} className='mr-2' />{resposibility}</span>) : ''}</div>
 				</div>
 			</div>
     )

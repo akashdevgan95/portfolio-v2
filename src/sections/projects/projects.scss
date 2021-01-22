@@ -1,0 +1,28 @@
+div.projects{
+    div.project-list{
+
+        div{
+            background-color: var(--tile-bg);
+            position: relative;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            img{
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                width:15px;
+            }
+            p{
+               @include fontSize(14px) 
+            }
+            div.technologies-used{
+                span:first-child{
+                    margin-left:0px;
+                }
+                span{
+                    margin-left:5px;
+                }
+            }
+        }
+    }
+}
