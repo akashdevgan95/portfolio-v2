@@ -6,7 +6,7 @@ import linkImage from '../../images/link.svg';
 
 const ProjectTile = ({title,description,technologies}) => {
     return (
-        <Col sm={{ size: 12}} md={{ size: 4 }}>
+        <Col className='project-tile' sm={{ size: 12}} md={{ size: 4 }}>
             <h4 className='gray-color-text'>{title}</h4>
             <p className='gray-color-text'>{description}</p>
             <div className='technologies-used'>
