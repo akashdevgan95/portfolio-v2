@@ -1,21 +1,31 @@
 div.project-tile{
     background-color: var(--tile-bg);
     position: relative;
-    img{
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        width:15px;
+    div.project-name{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h4{
+            @include fontSize(30px)
+        }
+        img{
+            width:15px;
+        }
     }
+    
     p{
-       @include fontSize(16px) 
+       @include fontSize(16px); 
     }
+
     div.technologies-used{
         span:first-child{
             margin-left:0px;
         }
         span{
             margin-left:5px;
+            @include fontSize(14px); 
+            letter-spacing: 0.5px;
+            color:var(--green-color);
         }
     }
 }
