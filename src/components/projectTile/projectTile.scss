@@ -1,0 +1,21 @@
+div.project-tile{
+    background-color: var(--tile-bg);
+    position: relative;
+    img{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width:15px;
+    }
+    p{
+       @include fontSize(16px) 
+    }
+    div.technologies-used{
+        span:first-child{
+            margin-left:0px;
+        }
+        span{
+            margin-left:5px;
+        }
+    }
+}

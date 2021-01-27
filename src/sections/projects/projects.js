@@ -25,7 +25,7 @@ const Projects = () => {
     return (
         <Container className='projects mt-5 pt-5 mt-md-0 pt-md-0'>
             <Row className='full-vh-height align-items-center'>
-                <Col xs={{ size: 10, offset: 1 }} md={{ size: 10, offset: 1 }} lg={{ size: 8, offset: 2 }}>
+                <Col xs={{ size: 10, offset: 1 }} md={{ size: 10, offset: 1 }}>
                     <Row>
                         <Col>
                             <SectionHeading title='Projects'/>

@@ -1,32 +1,16 @@
 div.projects{
     div.project-list{
-
-        div.project-tile{
-            
-             
-                background-color: var(--tile-bg);
-            
-            
-            position: relative;
-            // padding-top: 15px;
-            // padding-bottom: 15px;
-            img{
-                position: absolute;
-                top: 15px;
-                right: 15px;
-                width:15px;
-            }
-            p{
-               @include fontSize(14px) 
-            }
-            div.technologies-used{
-                span:first-child{
-                    margin-left:0px;
-                }
-                span{
-                    margin-left:5px;
-                }
-            }
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        @include media-breakpoint(md, min){
+            grid-template-columns: 1fr 1fr;
+        }
+        @include media-breakpoint(lg, min){
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @include media-breakpoint(xl, min){
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }

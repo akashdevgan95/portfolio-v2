@@ -3,22 +3,22 @@
     "Work":[
         {
             "title":"Oceans",
-            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "technologies":["React","Wordpress"]
         },
         {
             "title":"Roots",
-            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "technologies":["Demandware","Javascript", "SASS","ISML"]
         },
         {
             "title":"Roots",
-            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "technologies":["Demandware","Javascript", "SASS","ISML"]
         },
         {
             "title":"Roots",
-            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "technologies":["Demandware","Javascript", "SASS","ISML"]
         }
     ],
