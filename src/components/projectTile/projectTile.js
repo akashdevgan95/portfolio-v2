@@ -4,12 +4,12 @@ import {Col} from 'reactstrap';
 // images
 import linkImage from '../../images/link.svg';
 
-const ProjectTile = ({title,description,technologies}) => {
+const ProjectTile = ({title,description,technologies,link}) => {
     return (
         <div className='project-tile p-3'>
             <div className='project-name'>
                 <h4 className='gray-color-text m-0'>{title}</h4>
-                <a href='#'>
+                <a href={link} target="_blank">
                     <img src={linkImage} alt='Link image' />
                 </a>
             </div>

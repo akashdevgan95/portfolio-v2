@@ -4,34 +4,40 @@
         {
             "title":"Oceans",
             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "technologies":["React","Wordpress"]
+            "technologies":["React","Wordpress"],
+            "link":"https://oceans.ca/"
         },
         {
             "title":"Roots",
             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "technologies":["Demandware","Javascript", "SASS","ISML"]
+            "technologies":["Demandware","Javascript", "SASS","ISML"],
+            "link":"https://oceans.ca/"
         },
         {
             "title":"Roots",
             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "technologies":["Demandware","Javascript", "SASS","ISML"]
+            "technologies":["Demandware","Javascript", "SASS","ISML"],
+            "link":"https://oceans.ca/"
         },
         {
             "title":"Roots",
             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "technologies":["Demandware","Javascript", "SASS","ISML"]
+            "technologies":["Demandware","Javascript", "SASS","ISML"],
+            "link":"https://oceans.ca/"
         }
     ],
     "Personal":[
         {
             "title":"Oceans",
             "description":"",
-            "technologies":["React","Wordpress"]
+            "technologies":["React","Wordpress"],
+            "link":"https://oceans.ca/"
         },
         {
             "title":"Roots",
             "description":"",
-            "technologies":["Demandware","Javascript", "SASS","ISML"]
+            "technologies":["Demandware","Javascript", "SASS","ISML"],
+            "link":"https://oceans.ca/"
         }
     ]
 }
