@@ -30,13 +30,10 @@ const Experience = () => {
                             <SectionHeading title='Work Experience'/>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col>
                     
-                            <MiniNav activeTab={activeTab} onClick={handleMiniNavButtonClick} navItems={data.companies} />
-                            </Col>
-                    </Row>
-                    <Row className='pl-3'>
+                    <MiniNav activeTab={activeTab} onClick={handleMiniNavButtonClick} navItems={data.companies} />
+
+                    <Row>
                         <Col className='job-positions'>
                             {positions.map(position => <TimelineItem {...position} />)}
                         </Col>

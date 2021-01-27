@@ -2,10 +2,14 @@ div.projects{
     div.project-list{
 
         div.project-tile{
-            background-color: var(--tile-bg);
+            
+             
+                background-color: var(--tile-bg);
+            
+            
             position: relative;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            // padding-top: 15px;
+            // padding-bottom: 15px;
             img{
                 position: absolute;
                 top: 15px;

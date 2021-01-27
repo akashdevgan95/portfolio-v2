@@ -31,19 +31,15 @@ const Projects = () => {
                             <SectionHeading title='Projects'/>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col>
+                   
                     
-                            <MiniNav activeTab={activeTab} onClick={handleMiniNavButtonClick} navItems={data.companies} />
-                            </Col>
-                    </Row>
-                    <Row className='pl-3 project-list'>
-                        <Col>
-                            <Row>
+                    <MiniNav activeTab={activeTab} onClick={handleMiniNavButtonClick} navItems={data.companies} />
+                            
+                    <div className='project-list'>
+                        
                             {projects.map(project => <ProjectTile {...project} />)}
-                            </Row>
-                        </Col>
-                    </Row>
+                            
+                    </div>
                 </Col>
             </Row>
         </Container>
