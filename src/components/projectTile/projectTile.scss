@@ -1,6 +1,11 @@
 div.project-tile{
     background-color: var(--tile-bg);
     position: relative;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    &:hover{
+        transform: translateY(-5px);
+    }
     div.project-name{
         display: flex;
         justify-content: space-between;

@@ -2,7 +2,7 @@ div.projects{
     div.project-list{
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 10px;
+        grid-gap: 15px;
         @include media-breakpoint(md, min){
             grid-template-columns: 1fr 1fr;
         }

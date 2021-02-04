@@ -1,43 +1,50 @@
 {
-    "companies":["Work","Personal","Currently working on"],
+    "companies":["Work","Personal"],
     "Work":[
         {
             "title":"Oceans",
-            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "technologies":["React","Wordpress"],
+            "description":"Single page web application using React on the frontend and Wordpress as headless CMS",
+            "technologies":["React","Redux","Wordpress"],
             "link":"https://oceans.ca/"
         },
         {
             "title":"Roots",
-            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "description":"Rebuilt the whole roots site using SASS, JavaScript, and Demandware as CMS",
             "technologies":["Demandware","Javascript", "SASS","ISML"],
-            "link":"https://oceans.ca/"
+            "link":"https://www.roots.com/ca/en/homepage"
         },
         {
-            "title":"Roots",
-            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "technologies":["Demandware","Javascript", "SASS","ISML"],
-            "link":"https://oceans.ca/"
+            "title":"Keurig",
+            "description":"E-commerce site using custom JS framework and Hybris CMS",
+            "technologies":["HTML","SASS", "JavaScript","Hypris"],
+            "link":"https://www.keurig.ca/"
         },
         {
-            "title":"Roots",
-            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "technologies":["Demandware","Javascript", "SASS","ISML"],
-            "link":"https://oceans.ca/"
+            "title":"Goldseal",
+            "description":"Single page web application using React on the frontend and Wordpress as headless CMS",
+            "technologies":["React","Redux","Wordpress"],
+            "link":"https://goldseal.ca/"
+        },
+        {
+            "title":"VH coffee Services",
+            "description":"Built a custom wordpress theme from scratch",
+            "technologies":["PHP","Javascript", "AJAX","CSS"],
+            "link":"https://www.vhcoffeeservices.com/"
+        },
+        {
+            "title":"Authentica",
+            "description":"Single page web application using React on the frontend and Wordpress as headless CMS",
+            "technologies":["React","Redux","Wordpress"],
+            "link":"https://authenticaworldcuisine.com/"
         }
+        
     ],
     "Personal":[
         {
-            "title":"Oceans",
-            "description":"",
-            "technologies":["React","Wordpress"],
-            "link":"https://oceans.ca/"
-        },
-        {
-            "title":"Roots",
-            "description":"",
-            "technologies":["Demandware","Javascript", "SASS","ISML"],
-            "link":"https://oceans.ca/"
+            "title":"Foode",
+            "description":"Build a single page e-Commerce application using MERN stack",
+            "technologies":["React","Node","Express","MongoDB","Cloudinary"],
+            "link":"https://myfoode.herokuapp.com/"
         }
     ]
 }
