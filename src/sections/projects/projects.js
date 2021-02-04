@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {Container, Row, Col} from 'reactstrap';
-import { v4 as uuidv4 } from 'uuid';
+import { v4 } from 'uuid';
 
 // data
 import data from '../../data/projects.json';
@@ -15,8 +15,6 @@ const Projects = () => {
     const [activeTab, setActiveTab] = useState(data.companies[0]);
 
     const projects = data[activeTab] || [];
-
-    console.log(projects);
 
     const handleMiniNavButtonClick = (e) => {
        setActiveTab(e.target.innerText)
@@ -37,7 +35,7 @@ const Projects = () => {
                             
                     <div className='project-list'>
                         
-                            {projects.map(project => <ProjectTile {...project} />)}
+                            {projects.map(project => <ProjectTile key={v4()} {...project} />)}
                             
                     </div>
                 </Col>

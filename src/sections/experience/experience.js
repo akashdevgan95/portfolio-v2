@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {Container, Row, Col} from 'reactstrap';
-import { v4 as uuidv4 } from 'uuid';
+import { v4 } from 'uuid';
 
 // data
 import data from '../../data/experience.json';
@@ -11,7 +11,6 @@ import TimelineItem from '../../components/timelineItem/timelineItem';
 import MiniNav from '../../components/miniNav/miniNav';
 
 const Experience = () => {
-    console.log(useState(data.companies[0]));
     const [activeTab, setActiveTab] = useState(data.companies[0]);
 
 
@@ -35,7 +34,7 @@ const Experience = () => {
 
                     <Row>
                         <Col className='job-positions'>
-                            {positions.map(position => <TimelineItem {...position} />)}
+                            {positions.map(position => <TimelineItem key={v4()} {...position} />)}
                         </Col>
                     </Row>
                 </Col>

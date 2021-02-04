@@ -15,7 +15,7 @@ const Intro = () => {
                     <p className='gray-color-text w-md-50 mb-4'>I am a Web Developer based in Toronto, Canada. My expertise is in building web applications, landing  pages and anything in between.
                     </p>
                     <section className='header-cta'>
-                        <a href='https://drive.google.com/file/d/1XfRC1jkgRWsLdTMbMWrN_jAvggBB3DK5/view?usp=sharing' target='_blank' className='green-btn p-2 px-4'>Download CV</a>
+                        <a href='https://drive.google.com/file/d/1XfRC1jkgRWsLdTMbMWrN_jAvggBB3DK5/view?usp=sharing' target='_blank' rel='noreferrer' className='green-btn p-2 px-4'>Download CV</a>
                         <Link
                             activeClass="active"
                             to="contact"

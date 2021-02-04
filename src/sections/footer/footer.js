@@ -1,5 +1,9 @@
 import React, {useState} from 'react';
-import {Container, Row, Col} from 'reactstrap';
+import { Row, Col} from 'reactstrap';
+
+//util
+import validateEmail from '../../util/validateEmail';
+import sendMail from '../../util/sendMail';
 
 //components
 import SectionHeading from '../../components/sectionHeading/sectionHeading';
@@ -11,29 +15,33 @@ const Footer = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
-
-    const validateEmail = (email) => {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
-    }
+    const [successMsg, setSuccessMsg] = useState('');
 
     const submitClicked = (e) => {
-
-        console.log()
-
         if(name.length === 0 || email.length === 0 || message.length === 0){
-            setError('*Please fill all fields');
+            setError('*Please fill in all the fields');
             return;
         }else{
             setError('');
         }
 
         if(!validateEmail(email)){
-            setError('*Please enter a valid address');
+            setError('*Please enter a valid email address');
             return;
         }
 
-        console.log('success');
+        sendMail(name,email,message);
+        setSuccessMsg('Email Sent.');
+
+        //resetting state
+        setTimeout(() => {
+            setName('');
+            setEmail('');
+            setMessage('');
+            setError('');
+            setSuccessMsg('');
+        },2000);
+
     }
 
 
@@ -49,19 +57,24 @@ const Footer = () => {
                     </Row>
                     <Row className={error.length > 0 ? 'mt-5' : 'd-none'}>
                         <Col>
-                            {error.length > 0 ? <i className='green-color-text'>{error}</i> : null}
+                            <i className='green-color-text'>{error}</i>
+                        </Col>
+                    </Row>
+                    <Row className={successMsg.length > 0 ? 'mt-5' : 'd-none'}>
+                        <Col>
+                           <i className='green-color-text'>{successMsg}</i>
                         </Col>
                     </Row>
                     <Row className={error.length > 0 ? 'mt-3' : 'mt-5'}>
                         <Col xs={{ size: 12 }} md={{ size: 3 }} className='form-container'>
                             <Input name='Name' value={name} resetError={setError} setInputValue={setName} />
                         </Col>
-                        <Col xs={{ size: 12 }} md={{ size: 3 }}>
+                        <Col xs={{ size: 12 }} md={{ size: 3 }} className='mt-5 mt-md-0'>
                             <Input name='Email' value={email} resetError={setError} setInputValue={setEmail} />
                         </Col>
                     </Row>
                     <Row className='mt-5'>
-                        <Col xs={{ size: 6 }} className='form-container'>
+                        <Col xs={{ size: 12 }} md={{size: 6}} className='form-container'>
                             <Input name='Message' value={message} resetError={setError} setInputValue={setMessage} />
                         </Col>
                     </Row>
