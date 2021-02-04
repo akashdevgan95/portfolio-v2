@@ -14,6 +14,12 @@
         transform:translateY(0)
     }
 
+    .navbar-brand{
+        img{
+            width:50px;
+        }
+    }
+
     a{
         color:var(--grey-text-color);
         font-weight: 300;
