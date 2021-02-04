@@ -25,22 +25,29 @@ body{
 .btn{
     border-radius: 2px;
     text-align:center;
+    cursor: pointer;
     font-weight: 500 !important;
     @include fontSize(14px);
+    border: 2px solid var(--green-color);
 }
 
 .green-btn{
     @extend .btn;
     background-color: var(--green-color);
     color: var(--page-bg) !important;  
-    border: none;
+    text-decoration: none !important;
 }
 
 .green-border-btn{
     @extend .btn;
     background-color: transparent;
-    border:2px solid var(--green-color);
     color: var(--green-color);
+    text-decoration: none !important;
+    transition: all .2s ease;
+    &:hover{
+        background: rgba(102, 252, 241,0.5);
+        color: var(--page-bg) !important; 
+    }
 }
 
 // Helpful classes

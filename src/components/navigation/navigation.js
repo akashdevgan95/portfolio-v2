@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import {Collapse, Navbar, NavbarBrand, Nav, NavItem, NavLink} from 'reactstrap';
+import { Link } from "react-scroll";
 
 
-const Navigation = (props) => {
+
+const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
 
@@ -62,16 +64,49 @@ const Navigation = (props) => {
             <Collapse isOpen={isOpen} navbar>
                 <Nav className='ml-auto' navbar>
                     <NavItem className='my-2 my-md-0 mx-md-3'>
-                        <NavLink href='#about'>About</NavLink>
+                    <Link
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        className='nav-link'
+                        onClick={toggle}
+                    >About</Link>
+                       
                     </NavItem>
                     <NavItem className='my-2 my-md-0 mx-md-3'>
-                        <NavLink href='#experience'>Experience</NavLink>
+                        <Link
+                            activeClass="active"
+                            to="experience"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            className='nav-link'
+                            onClick={toggle}
+                        >Experience</Link>
                     </NavItem>
                     <NavItem className='my-2 my-md-0 mx-md-3'>
-                        <NavLink href='#projects'>Projects</NavLink>
+                        <Link
+                            activeClass="active"
+                            to="projects"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            className='nav-link'
+                            onClick={toggle}
+                        >Projects</Link>
                     </NavItem>
                     <NavItem className='my-2 my-md-0 mx-md-3'>
-                        <NavLink href='#contact' className='green-btn px-sm-3'>Contact</NavLink>
+                        <Link
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            className='nav-link green-btn px-sm-3'
+                            onClick={toggle}
+                        >Contact</Link>
                     </NavItem>
                 </Nav>
             </Collapse>
