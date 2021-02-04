@@ -3,6 +3,7 @@ import {Container, Row, Col} from 'reactstrap';
 
 //components
 import SectionHeading from '../../components/sectionHeading/sectionHeading';
+import Input from '../../components/input/input';
 
 const Footer = () => {
     return (
@@ -15,15 +16,22 @@ const Footer = () => {
                             <p className='gray-color-text'>Do you have project in mind? Let's chat</p>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col xs={{ size: 12 }} md={{ size: 6 }} className='form-container'>
-                        <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
-                            <label for="name" class="form__label">Name</label>
-                        </div>
+                    <Row className='mt-5'>
+                        <Col xs={{ size: 12 }} md={{ size: 3 }} className='form-container'>
+                            <Input name='Name'/>
                         </Col>
-                        <Col xs={{ size: 12 }} md={{ size: 6 }}>
-                            <label className='gray-color-text'>Email</label>
+                        <Col xs={{ size: 12 }} md={{ size: 3 }}>
+                            <Input name='Email'/>
+                        </Col>
+                    </Row>
+                    <Row className='mt-5'>
+                        <Col xs={{ size: 6 }} className='form-container'>
+                            <Input name='Message'/>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col className='mt-5'>
+                            <button className='green-border-btn mt-4 p-2 px-4'>Send</button>
                         </Col>
                     </Row>
                 </Col>
