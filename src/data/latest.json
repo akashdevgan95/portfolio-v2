@@ -1,0 +1,43 @@
+{
+    "companies":["Instagram","Blog"],
+    "Instagram":[
+        {
+            "title":"Oceans",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "technologies":["React","Wordpress"],
+            "link":"https://oceans.ca/"
+        },
+        {
+            "title":"Roots",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "technologies":["Demandware","Javascript", "SASS","ISML"],
+            "link":"https://oceans.ca/"
+        },
+        {
+            "title":"Roots",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "technologies":["Demandware","Javascript", "SASS","ISML"],
+            "link":"https://oceans.ca/"
+        },
+        {
+            "title":"Roots",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "technologies":["Demandware","Javascript", "SASS","ISML"],
+            "link":"https://oceans.ca/"
+        }
+    ],
+    "Blog":[
+        {
+            "title":"Oceans",
+            "description":"",
+            "technologies":["React","Wordpress"],
+            "link":"https://oceans.ca/"
+        },
+        {
+            "title":"Roots",
+            "description":"",
+            "technologies":["Demandware","Javascript", "SASS","ISML"],
+            "link":"https://oceans.ca/"
+        }
+    ]
+}

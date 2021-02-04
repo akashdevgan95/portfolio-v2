@@ -71,10 +71,7 @@ const Navigation = (props) => {
                         <NavLink href='#projects'>Projects</NavLink>
                     </NavItem>
                     <NavItem className='my-2 my-md-0 mx-md-3'>
-                        <NavLink href='#blog'>Blog</NavLink>
-                    </NavItem>
-                    <NavItem className='my-2 my-md-0 mx-md-3'>
-                        <NavLink href='#contact' className='green-btn px-sm-3'>Hire me</NavLink>
+                        <NavLink href='#contact' className='green-btn px-sm-3'>Contact</NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>

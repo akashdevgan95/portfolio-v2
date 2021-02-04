@@ -3,7 +3,7 @@ import {Container, Row, Col} from 'reactstrap';
 import { v4 as uuidv4 } from 'uuid';
 
 // data
-import data from '../../data/projects.json';
+import data from '../../data/latest.json';
 
 //components
 import SectionHeading from '../../components/sectionHeading/sectionHeading';
