@@ -9,7 +9,7 @@ div.form-input-container{
         width:100%;
         background: none;
         color:var(--green-color);
-        -webkit-backface-visibility: hidden;
+        appearance: none;
     }
 
     label{
