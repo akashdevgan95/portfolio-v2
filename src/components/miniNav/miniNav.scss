@@ -1,25 +1,29 @@
-div.miniNav{
-    border-bottom: 3px solid var(--grey-text-color);
-    white-space: nowrap;
-    button{
-        background: none;
-        border:none;
-        color:var(--grey-text-color);
-        outline: none;
-        min-width: 120px;
-        &.active{
-            color:var(--green-color);
-            position: relative;
-            &::after{
-                content:'';
-                height: 3px;
-                width:100%;
-                background-color:var(--green-color);
-                position: absolute;
-                bottom:0;
-                left: 0;
-                transform: translateY(100%);
-            }
-        }
+div.miniNav {
+  border-bottom: 3px solid var(--grey-text-color);
+  white-space: nowrap;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+  button {
+    background: none;
+    border: none;
+    color: var(--grey-text-color);
+    outline: none;
+    min-width: 120px;
+    &.active {
+      color: var(--green-color);
+      position: relative;
+      &::after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background-color: var(--green-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+      }
     }
+  }
 }

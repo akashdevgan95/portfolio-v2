@@ -1,50 +1,72 @@
 {
-    "companies":["Work","Personal"],
-    "Work":[
-        {
-            "title":"Oceans",
-            "description":"Single page web application using React on the frontend and Wordpress as headless CMS",
-            "technologies":["React","Redux","Wordpress"],
-            "link":"https://oceans.ca/"
-        },
-        {
-            "title":"Roots",
-            "description":"Rebuilt the whole roots site using SASS, JavaScript, and Demandware as CMS",
-            "technologies":["Demandware","Javascript", "SASS","ISML"],
-            "link":"https://www.roots.com/ca/en/homepage"
-        },
-        {
-            "title":"Keurig",
-            "description":"E-commerce site using custom JS framework and Hybris CMS",
-            "technologies":["HTML","SASS", "JavaScript","Hypris"],
-            "link":"https://www.keurig.ca/"
-        },
-        {
-            "title":"Goldseal",
-            "description":"Single page web application using React on the frontend and Wordpress as headless CMS",
-            "technologies":["React","Redux","Wordpress"],
-            "link":"https://goldseal.ca/"
-        },
-        {
-            "title":"VH coffee Services",
-            "description":"Built a custom wordpress theme from scratch",
-            "technologies":["PHP","Javascript", "AJAX","CSS"],
-            "link":"https://www.vhcoffeeservices.com/"
-        },
-        {
-            "title":"Authentica",
-            "description":"Single page web application using React on the frontend and Wordpress as headless CMS",
-            "technologies":["React","Redux","Wordpress"],
-            "link":"https://authenticaworldcuisine.com/"
-        }
-        
-    ],
-    "Personal":[
-        {
-            "title":"Foode",
-            "description":"Build a single page e-Commerce application using MERN stack",
-            "technologies":["React","Node","Express","MongoDB","Cloudinary"],
-            "link":"https://myfoode.herokuapp.com/"
-        }
-    ]
+  "companies": ["Work", "Personal"],
+  "Work": [
+    {
+      "title": "Saranghae",
+      "description": "E-commerce site using shopify and nodejs for crud operations",
+      "technologies": ["Shopify", "Nodejs", "Expressjs", "AWS"],
+      "link": "https://lovesaranghae.com/"
+    },
+    {
+      "title": "Confetto",
+      "description": "Social media marketing tool that uses AI to generate posts.",
+      "technologies": [
+        "Nextjs",
+        "Redux",
+        "Tailwindcss",
+        "SemanticUI",
+        "Cypress",
+        "Nodejs",
+        "Expressjs",
+        "AWS"
+      ],
+      "link": "https://app.confet.to/"
+    },
+    {
+      "title": "Roots",
+      "description": "Rebuilt the whole roots site using SASS, JavaScript, and Demandware as CMS",
+      "technologies": ["Demandware", "Javascript", "SASS", "ISML"],
+      "link": "https://www.roots.com/ca/en/homepage"
+    },
+    {
+      "title": "Keurig",
+      "description": "E-commerce site using custom JS framework and Hybris CMS",
+      "technologies": ["HTML", "SASS", "JavaScript", "Hypris"],
+      "link": "https://www.keurig.ca/"
+    },
+    {
+      "title": "Goldseal",
+      "description": "Single page web application using React on the frontend and Wordpress as headless CMS",
+      "technologies": ["React", "Redux", "Wordpress"],
+      "link": "https://goldseal.ca/"
+    },
+    {
+      "title": "Authentica",
+      "description": "Single page web application using React on the frontend and Wordpress as headless CMS",
+      "technologies": ["React", "Redux", "Wordpress"],
+      "link": "https://authenticaworldcuisine.com/"
+    },
+    {
+      "title": "Zipydo",
+      "description": "Support dashboard for end-to-end Instant retail platform.",
+      "technologies": [
+        "Nextjs",
+        "Redux",
+        "Tailwindcss",
+        "SemanticUI",
+        "Nodejs",
+        "Expressjs",
+        "AWS"
+      ],
+      "link": "https://zipydo.com/"
+    }
+  ],
+  "Personal": [
+    {
+      "title": "Foode",
+      "description": "Build a single page e-Commerce application using MERN stack",
+      "technologies": ["React", "Node", "Express", "MongoDB", "Cloudinary"],
+      "link": "https://myfoode.herokuapp.com/"
+    }
+  ]
 }

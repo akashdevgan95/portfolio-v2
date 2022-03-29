@@ -1,21 +1,24 @@
-div.social-icons{
-    position: fixed;
-    top: 50%;
-    left: 1rem;
-    transform: translate(25%,-50%);
-    @include media-breakpoint(md, min){
-        left:3rem;
-    }
-    > a{
-        display:block;
-    }
+div.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 1rem;
+  transform: translate(25%, -50%);
+  @include media-breakpoint(md, min) {
+    left: 3rem;
+  }
+  > a {
+    display: block;
+    margin-bottom: 20px;
+  }
 
-    a:nth-child(2){
-        margin:20px 0;
-    }
-
-    img{
-        height:20px;
-        width:20px;
-    }
+  img {
+    height: 20px;
+    width: 20px;
+  }
+  img[alt="Youtube"] {
+    height: 25px;
+    width: 25px;
+    margin-left: -2px;
+    display: block;
+  }
 }

@@ -1,45 +1,56 @@
 {
-    "companies":["Saranghae","Idea Rebel"],
-    "Saranghae":[
-        {
-            "time":"2020 (March) - Present",
-            "title":"Full Stack Developer",
-            "responsibilities":[
-                "Designing and developing Restful APIs",
-                "Develop functional databases, applications, and servers to support websites on the back end",
-                "Integrating our front-end UI with the constructed API"
-            ]
-        },
-        {
-            "time":"2019 - 2020 (March)",
-            "title":"Frontend Web Developer",
-            "responsibilities":[
-                "Developing features to enhance the user experience",
-                "Optimizing web pages for maximum speed and scalability",
-                "Write reusable code and libraries",
-                "Ensuring cross-platform optimization for mobile phones"
-            ]
-        }
-    ],
-    "Idea Rebel":[
-        {
-            "time":"2016 - 2019 (January)",
-            "title":"Frontend Web Developer",
-            "responsibilities":[
-                "Develop new user-facing features",
-                "Ensure the technical feasibility of UI/UX designs",
-                "Build reusable code and libraries for future use",
-                "Production and maintenance of websites and web application user interfaces"
-            ]
-        },
-        {
-            "time":"2016 - 2016 (June)",
-            "title":"Frontend Web Developer (Contractor)",
-            "responsibilities":[
-                "Testing the site for usability and fixing any bugs",
-                "Optimizing web pages for maximum speed and scalability",
-                "Developing features to enhance the user experience"
-            ]
-        }
-    ]
+  "companies": ["HCL( PayPal )", "Saranghae", "Idea Rebel"],
+  "Saranghae": [
+    {
+      "time": "2020 (March) - 2021 (June)",
+      "title": "Full Stack Developer",
+      "responsibilities": [
+        "Improve and maintain efficiency by reconstructing the official website using modern tools like React.",
+        "Migrated 800,000 order records and 250,000 customer records from Konnektive CRM to Shopify.",
+        "Managed live and staging servers on AWS using services like EC2, Elastic Beanstalk etc."
+      ]
+    },
+    {
+      "time": "2019 - 2020 (March)",
+      "title": "Frontend Web Developer",
+      "responsibilities": [
+        "Developing features to enhance the user experience.",
+        "Optimizing web pages for maximum speed and scalability.",
+        "Write reusable code and libraries.",
+        "Ensuring cross-platform optimization for mobile phones."
+      ]
+    }
+  ],
+  "Idea Rebel": [
+    {
+      "time": "2016 - 2019 (January)",
+      "title": "Frontend Web Developer",
+      "responsibilities": [
+        "Implemented headless CMS with WordPress as the backend and ReactJS in many projects to help manage content with a well architected front end.",
+        "Involved in technology research case that required to gather information and benefits of using Single Page Application ( SPA’s) and decide on which framework and library to use.",
+        "Lead team of 4 in development, testing, debugging, and maintenance of dynamic and secure websites and web-based applications.",
+        "Optimizing web applications for maximum speed and scalability."
+      ]
+    },
+    {
+      "time": "2016 - 2016 (June)",
+      "title": "Frontend Web Developer (Contractor)",
+      "responsibilities": [
+        "Testing the site for usability and fixing any bugs.",
+        "Optimizing web pages for maximum speed and scalability.",
+        "Developing features to enhance the user experience."
+      ]
+    }
+  ],
+  "HCL( PayPal )": [
+    {
+      "time": "2021 (June) - Present",
+      "title": "Technical Lead",
+      "responsibilities": [
+        "Responsible for adding tools like Redux and Tailwindcss to an existing project to improve developer productivity.",
+        "Implemented end-to-end testing using Cypress.",
+        "Contributed to internal tool used to push ads to various PayPal platforms."
+      ]
+    }
+  ]
 }
