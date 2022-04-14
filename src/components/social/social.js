@@ -9,17 +9,17 @@ import Youtube from "../../images/social/youtube.svg"
 const Social = () => {
   return (
     <div className="social-icons d-none d-md-block">
-      <a href="https://github.com/akashdevgan">
-        <img alt="Github" src={Github} />
-      </a>
-      <a href="https://www.instagram.com/akash.developer/">
+      <a href="https://www.instagram.com/akashdevgan95/">
         <img alt="Instagram" src={Instagram} />
       </a>
       <a href="https://www.youtube.com/channel/UCRNZrwuxh9QWzJ9PYfE0tXA">
         <img alt="Youtube" src={Youtube} />
       </a>
-      <a href="https://www.linkedin.com/in/akash24/">
-        <img alt="LinkedIns" src={Linkedin} />
+      <a href="https://github.com/akashdevgan95">
+        <img alt="Github" src={Github} />
+      </a>
+      <a href="https://www.linkedin.com/in/akashdevgan95">
+        <img alt="LinkedIn" src={Linkedin} />
       </a>
     </div>
   )
