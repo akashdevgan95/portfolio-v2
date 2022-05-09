@@ -11,7 +11,7 @@ const MiniNav = ({ activeTab, onClick, navItems }) => {
             <button
               key={uuidv4()}
               onClick={onClick}
-              className={activeTab === navItem ? "" : ""}
+              className={activeTab === navItem ? "active" : ""}
             >
               {navItem}
             </button>
