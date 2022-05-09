@@ -67,6 +67,18 @@
       "description": "Build a single page e-Commerce application using MERN stack",
       "technologies": ["React", "Node", "Express", "MongoDB", "Cloudinary"],
       "link": "https://myfoode.herokuapp.com/"
+    },
+    {
+      "title": "Resumify",
+      "description": "Yourfreeresume.com is the only resume maker on the internet that actually lets your generate resume for absolutely free.",
+      "technologies": [
+        "React",
+        "Node",
+        "Tailwindcss",
+        "Semantic UI React",
+        "React PDF"
+      ],
+      "link": "https://yourfreeresume.com/"
     }
   ]
 }
