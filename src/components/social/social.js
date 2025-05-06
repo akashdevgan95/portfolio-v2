@@ -18,9 +18,6 @@ const Social = () => {
       <a href="https://github.com/akashdevgan95">
         <img alt="Github" src={Github} />
       </a>
-      <a href="https://www.linkedin.com/in/akashdevgan95">
-        <img alt="LinkedIn" src={Linkedin} />
-      </a>
     </div>
   )
 }
